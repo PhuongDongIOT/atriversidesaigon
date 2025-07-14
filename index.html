@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="./public/style.css" rel="stylesheet">
+</head>
+
+<body class="font-merriweather ">
+    <section>
+        <div class="relative w-full">
+            <div class="swiper mySwiper overflow-hidden shadow-lg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide min-h-screen">
+                        <video src="./public/videos/iils.mp4" autoplay muted loop playsinline
+                            class="w-auto min-h-screen h-full object-cover"></video>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 3" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Nút next -->
+                <div class="swiper-pagination !bottom-[150px]"></div>
+            </div>
+            <div class="absolute z-[999] top-[50%] transform -translate-y-[50%] w-full text-center text-white">
+                <h2 class="text-4xl font-bold mb-2">DẤU ẤN ĐẲNG CẤP ĐÍCH THỰC</h2>
+                <a href="" class="text-sm px-4 py-2 bg-[#2d2e3d]">ĐẶT LỊCH HẸN TƯ VẤN</a>
+            </div>
+
+
+            <div
+                class="swiper-button-next !z-[9999] !right-[25%] w-10 h-10 outline-0 text-white flex items-center justify-center shadow-md hover:text-black hover:scale-125 hover:shadow-2xl transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+            </div>
+            <div
+                class="swiper-button-prev !z-[9999] !left-[25%] w-10 h-10 outline-0 text-white flex items-center justify-center shadow-md hover:text-black hover:scale-125 hover:shadow-2xl transition">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+            </div>
+        </div>
+    </section>
+    <section id="header" class="fixed top-0 left-0 w-full z-[999] shadow-md">
+        <div id="headerContainer"
+            class="mx-auto max-w-6xl flex justify-between items-center px-4 py-6 space-x-4 transition-all">
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo trái"
+                    class="logo-img w-24 h-24 object-contain transition-all duration-300" />
+            </div>
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo giữa"
+                    class="logo-img w-32 h-32 object-contain transition-all duration-300" />
+            </div>
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo phải"
+                    class="logo-img w-24 h-24 object-contain transition-all duration-300" />
+            </div>
+        </div>
+
+        <!-- NAVIGATION -->
+        <nav class="bg-[#2d2e3d] text-white text-xs">
+            <ul class="flex justify-center space-x-8 py-4 relative z-20">
+                <li><a href="#" class="tracking-wider hover:text-gray-300">TRANG CHỦ</a></li>
+                <li class="relative group">
+                    <a href="#" class="tracking-wider hover:text-gray-300">DỰ ÁN</a>
+                    <!-- Submenu -->
+                    <div id="submenu"
+                        class="w-4xl absolute left-1/2 -translate-x-1/2 top-full mt-2 px-4 py-3 bg-[#f5ede7] text-[#6d5f50] shadow-md flex space-x-6 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300">
+                        <a href="#" class="hover:underline tracking-wide">GIỚI THIỆU DỰ ÁN</a>
+                        <a href="#" class="hover:underline tracking-wide">DỊCH VỤ LEGENDARY RITZ-CARLTON</a>
+                        <a href="#" class="hover:underline tracking-wide">THIẾT KẾ</a>
+                        <a href="#" class="hover:underline tracking-wide">TIỆN ÍCH</a>
+                        <a href="#" class="hover:underline tracking-wide">MẶT BẰNG TẦNG</a>
+                    </div>
+                </li>
+                <li><a href="#" class="tracking-wider hover:text-gray-300">VỊ TRÍ</a></li>
+                <li><a href="#" class="tracking-wider hover:text-gray-300">THƯ VIỆN</a></li>
+                <li><a href="#" class="tracking-wider hover:text-gray-300">NHÀ PHÁT TRIỂN</a></li>
+                <li><a href="#" class="tracking-wider hover:text-gray-300">BĐS HÀNG HIỆU</a></li>
+                <li><a href="#" class="tracking-wider hover:text-gray-300">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="bg-cover bg-center w-full relative -top-[150px]"
+        style="background-image: url(./public/images/long.jpeg);">
+        <div class="mx-auto max-w-3xl w-full border-4 border-cyan-50 relative z-999">
+            <img src="./public/images/dent.jpg" alt="Ảnh dự án 3" class="w-full h-auto object-cover" loading="lazy" />
+        </div>
+    </section>
+
+    <section class="bg-cover bg-center w-full" style="background-image: url(./public/images/gradient.png);">
+        <div class="py-48">
+            <div class="mx-auto max-w-3xl w-full text-center">
+                <h2 class="text-4xl mb-4">SỐNG CHUẨN TINH HOA </br>
+                    GIỮA LÒNG PHỐ CỔ</h2>
+                <div class="mx-auto text-xs max-w-2xl w-full ">
+                    <p class="mb-8">
+                        Kiêu hãnh tọa lạc ngay trung tâm “Hà Nội 36 phố phường”, bên con đường sầm uất cách Hồ Hoàn Kiếm
+                        vài
+                        bước chân, Khu căn hộ hàng hiệu Ritz-Carlton tại The Grand lần đầu tiên xuất hiện tại Việt Nam,
+                        định
+                        hình một phong cách sống hàng hiệu đẳng cấp dành cho số ít những chủ nhân xứng tầm.
+                    </p>
+
+                </div>
+
+                <a href="" class="text-sm px-4 py-2 bg-[#2d2e3d] text-white">ĐẶT LỊCH HẸN TƯ VẤN</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full">
+        <div class="grid grid-cols-5">
+            <div class="col-span-3 w-full">
+                <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full object-cover" loading="lazy" />
+            </div>
+            <div class="col-span-2 h-full flex flex-col justify-center">
+                <div class="border border-gray-400 p-2 relative -left-[150px] max-w-[450px] w-full">
+                    <div class="bg-cover bg-center p-2" style="background-image: url(./public/images/gradient.png);">
+                        <h2 class="text-xl">KIẾN TẠO NÊN CHUẨN MỰC MỚI VỚI DỊCH VỤ HUYỀN THOẠI CỦA RITZ-CARLTON</h2>
+                        <p class="px-4 text-xs mb-2">Đặc quyền trải nghiệm những dịch vụ cùng tiện ích tiêu chuẩn cao
+                            nhất được cá
+                            nhân hóa bởi
+                            thương hiệu huyền thoại Ritz-Carlton trong không gian sống riêng tư ngay tại phố cổ, chỉ duy
+                            nhất The Grand, Hanoi mới có thể đem đến cho chủ nhân những giá trị vô giá này.</p>
+                        <div class="w-full text-center">
+                            <a href="" class="mx-auto text-sm px-4 py-2 bg-[#2d2e3d] text-white  relative -bottom-3">ĐẶT
+                                LỊCH HẸN TƯ
+                                VẤN</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/javascripts/carousel.js"></script>
+    <script src="./public/javascripts/shink.js"></script>
+    <script src="./public/javascripts/menu.js"></script>
+    <script src="./public/javascripts/image.js"></script>
+</body>
+
+</html>
