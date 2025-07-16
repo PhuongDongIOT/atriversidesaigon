@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="./public/style.css" rel="stylesheet">
+</head>
+
+<body class="font-merriweather bg-main text-main">
+    <section>
+        <div class="relative w-full">
+            <div class="swiper mySwiper overflow-hidden shadow-lg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide min-h-screen">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 3" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Nút next -->
+                <div class="swiper-pagination !bottom-[150px] hidden"></div>
+            </div>
+            <div class="absolute z-[999] top-[60%] transform -translate-y-[50%] w-full text-center text-white">
+                <div class="mx-auto max-w-xl text-center flex flex-col gap-8">
+                    <h2 class="text-3xl font-light tracking-[0.2rem]">DỰ ÁN</h2>
+                    <p class="text-xs">Với chất lượng đẳng cấp thế giới của nhà phát triển bất động sản Masterise Homes,
+                        kết hợp cùng
+                        Ritz-Carlton – thương hiệu nổi tiếng với dịch vụ huyền thoại, The Grand, Hanoi sẽ là kiệt tác
+                        độc
+                        tôn, mang đến giá trị bền vững theo thời gian cho chủ nhân.</p>
+                    <div class="text-center">
+                        <a href="" class="mx-auto text-sm px-4 py-2 bg-[#2d2e3d]">ĐẶT LỊCH HẸN TƯ VẤN</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="header" class="fixed top-0 left-0 w-full z-[999] shadow-md">
+        <div id="headerContainer"
+            class="mx-auto max-w-6xl flex justify-between items-center px-4 py-6 space-x-4 transition-all">
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo trái"
+                    class="logo-img w-24 h-24 object-contain transition-all duration-300" />
+            </div>
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo giữa"
+                    class="logo-img w-32 h-32 object-contain transition-all duration-300" />
+            </div>
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo phải"
+                    class="logo-img w-24 h-24 object-contain transition-all duration-300" />
+            </div>
+        </div>
+
+        
+                <nav class="bg-[#2d2e3d]  text-xs">
+            <ul class="flex justify-center space-x-8 py-4 relative z-20">
+                <li><a href="index.html" class="tracking-wider hover:text-gray-300">TRANG CHỦ</a></li>
+                <li class="relative group">
+                    <a href="project.html" class="tracking-wider hover:text-gray-300">DỰ ÁN</a>
+                    <!-- Submenu -->
+                    <div id="submenu"
+                        class="w-4xl absolute left-1/2 -translate-x-1/2 top-full mt-2 px-4 py-3 bg-[#f5ede7] text-[#6d5f50] shadow-md flex space-x-6 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300">
+                        <a href="#" class="hover:underline tracking-wide">GIỚI THIỆU DỰ ÁN</a>
+                        <a href="#" class="hover:underline tracking-wide">DỊCH VỤ LEGENDARY RITZ-CARLTON</a>
+                        <a href="#" class="hover:underline tracking-wide">THIẾT KẾ</a>
+                        <a href="#" class="hover:underline tracking-wide">TIỆN ÍCH</a>
+                        <a href="#" class="hover:underline tracking-wide">MẶT BẰNG TẦNG</a>
+                    </div>
+                </li>
+                <li><a href="location.html" class="tracking-wider hover:text-gray-300">VỊ TRÍ</a></li>
+                <li><a href="gallery.html" class="tracking-wider hover:text-gray-300">THƯ VIỆN</a></li>
+                <li><a href="developer.html" class="tracking-wider hover:text-gray-300">NHÀ PHÁT TRIỂN</a></li>
+                <li><a href="luxury-real-estate.html" class="tracking-wider hover:text-gray-300">BĐS HÀNG HIỆU</a></li>
+                <li><a href="contact.html" class="tracking-wider hover:text-gray-300">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="bg-orange-100">
+        <div class="py-24">
+            <div class="w-full">
+                <div class="mx-auto w-36">
+                    <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
+                        loading="lazy" />
+                </div>
+            </div>
+            <div class="py-12">
+                <div class="mx-auto max-w-2xl w-full">
+                    <div class="max-w-md mx-auto">
+                        <h2 class="text-3xl tracking-[0.2rem] mb-8 text-center">
+                            DỊCH VỤ HUYỀN THOẠI CỦA
+                            RITZ-CARLTON
+                        </h2>
+                    </div>
+                    <div class="grid grid-cols-2">
+                        <div class="flex flex-col gap-4">
+                            <p class="text-xs">Thương hiệu huyền thoại Ritz-Carlton là biểu tượng vượt thời gian của sự
+                                sang trọng, với sứ mệnh mang tới sự chăm sóc tinh tế và chất lượng dịch vụ vượt xa ngoài
+                                mong đợi. Chính tiêu chuẩn vàng này đã đưa The Ritz-Carlton trở thành thương hiệu hàng
+                                đầu thế giới.</p>
+                            <p class="text-xs">Đặc quyền trải nghiệm dịch vụ cùng tiện ích tiêu chuẩn cao nhất được cá
+                                nhân hóa bởi thương hiệu huyền thoại Ritz-Carlton trong không gian sống riêng tư và
+                                thoải mái chỉ có tại The Grand, Hanoi. </p>
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <p class="text-xs">Tại khu căn hộ hàng hiệu Ritz-Carlton, sự chăm sóc chân thành và khiến
+                                các chủ nhân thoải mái là sứ mệnh cao cả nhất.</p>
+                            <p class="text-xs">Điều này minh chứng cho cam kết của Ritz-Carlton trong việc cung cấp các
+                                tiện nghi và dịch vụ cá nhân hóa tốt nhất cho các gia chủ, để họ luôn được tận hưởng
+                                không gian ấm cúng, thoải mái và tinh tế bậc nhất.</p>
+                            <p class="text-xs">
+                                giác quan, mang lại niềm hạnh phúc và đáp ứng ngay cả những mong muốn chưa được bày tỏ
+                                của các quý ông quý bà.
+                            </p>
+
+                            <div>
+                                <a href="#" onclick="openModal()"
+                                    class="text-left mx-auto text-sm py-2 underline underline-offset-1">XEM DANH
+                                    SÁCH DỊCH VỤ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="grid grid-cols-2">
+            <div class="relative">
+                <img src="./public/images/dent.jpg" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
+                    loading="lazy" />
+                <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center">
+                    <h3 class="text-4xl tracking-tight font-bold text-white">THIẾT KẾ</h3>
+                </div>
+            </div>
+            <div class="flex flex-col items-center justify-center">
+                <div class="max-w-md w-full text-sm tracking-tight">
+                    Choáng ngợp bởi sự kết hợp tinh tế giữa vẻ đẹp của kiến trúc cổ điển và đường nét thiết kế hiện đại
+                    là trải nghiệm đầu tiên chủ nhân sẽ cảm nhận khi đặt chân đến Khu căn hộ hàng hiệu Ritz-Carlton tại
+                    The Grand. Cuộc sống tại The Grand, Hanoi đẹp như bức tranh tả thực, mang đậm phong cách Haussmann,
+                    trường phái kiến trúc đã đưa thủ đô Paris (thời Napoleon III) lột xác trở thành kinh đô hoa lệ như
+                    ngày nay.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-cover bg-no-repeat bg-center w-full"
+        style="background-image: url(./public/images/nextvoyage.jpg);">
+        <div class="max-w-4xl mx-auto relative -top-[100px]">
+
+            <div class="swiper mySwiperTwo overflow-hidden shadow-lg relative border-4 border-white">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh 1" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh 2" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh 3" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- <div class="swiper-pagination"></div> -->
+                <div class="swiper-button-next text-white"></div>
+                <div class="swiper-button-prev text-white"></div>
+            </div>
+
+            <div class="text-center absolute -bottom-2 left-0 w-full z-99">
+                <a href="" class="mx-auto px-8 py-4 bg-[#2d2e3d] text-white text-xs border-2 border-white">ĐẶT
+                    TÌM HIỂU THÊM</a>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section class="w-full">
+        <div class="grid grid-cols-4 gap-6 max-w-7xl w-full mx-auto py-12 px-4">
+            <div class="space-y-4">
+                <!-- Tower Selector -->
+                <div class="border border-gray-400">
+                    <button
+                        class="w-full bg-[#3e2a1d] text-sm text-white text-left px-4 py-3 font-medium flex justify-between items-center">
+                        THE CROWN
+                        <span class="transform rotate-90">&#x25BC;</span>
+                    </button>
+                </div>
+
+                <!-- Floorplan Selector -->
+                <div class="border border-gray-400">
+                    <button
+                        class="w-full bg-[#e6dbc7] text-[#3e2a1d] text-left px-4 py-3 font-medium flex justify-between items-center">
+                        FLOORPLAN L3-L8
+                        <span class="transform rotate-90">&#x25BC;</span>
+                    </button>
+                </div>
+
+                <!-- Preset Room List -->
+                <div class="pt-4 border-t border-gray-400">
+                    <div class="flex justify-between items-center px-2 pb-2 text-[#3e2a1d] font-medium uppercase">
+                        <span>PRESIDENTAL (3BR)</span>
+                        <button class="text-xl">&times;</button>
+                    </div>
+                    <ul class="text-xs">
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-[#3e2a1d] font-medium">C.01
+                        </li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.02</li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.05</li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.06</li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.08</li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.08A</li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.10</li>
+                        <li class="px-2 py-2 cursor-pointer border-b border-gray-300 text-gray-400">C.11</li>
+                    </ul>
+                </div>
+
+                <!-- Other Room Types -->
+                <div class="pt-4 border-t border-gray-400">
+                    <button
+                        class="w-full px-2 py-3 font-medium text-left border-b border-gray-300 flex justify-between items-center">
+                        CLASSIC (2BR)
+                        <span class="transform rotate-90">&#x25BC;</span>
+                    </button>
+                    <button
+                        class="w-full px-2 py-3 font-medium text-left border-b border-gray-300 flex justify-between items-center">
+                        PREMIER (1BR)
+                        <span class="transform rotate-90">&#x25BC;</span>
+                    </button>
+                </div>
+                <div class="flex flex-col gap-4 text-white text-sm">
+                    <button class="w-full px-2 py-3 font-medium bg-[#3e2a1d] text-center">
+                        TẢI BROCHURE
+                    </button>
+                    <button class="w-full px-2 py-3 font-medium text-center bg-[#3e2a1d]">
+                        ĐẶC LỊCH HẸN TƯ VẤN
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="col-span-3">
+                <div class="w-full h-full flex flex-col justify-center items-center">
+                    <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-auto object-cover"
+                        loading="lazy" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <div id="modal"
+        class="fixed inset-0 bg-[#fefdf6] z-[99999] hidden  flex flex-col items-center justify-center px-6 text-center h-auto overflow-y-auto">
+
+        <button onclick="closeModal()"
+            class="absolute top-6 right-6 text-3xl text-black hover:rotate-90 transition duration-300">
+            &times;
+        </button>
+
+        <img src="./public/images/logo.png" alt="Ritz Logo" class="w-24 h-auto mb-4" />
+        <h2 class="text-xl font-bold tracking-wider mb-1">THE RITZ · CARLTON</h2>
+        <h3 class="text-lg font-semibold tracking-wide mb-6">RESIDENCES</h3>
+        <h1 class="text-3xl font-serif font-medium mb-4">DỊCH VỤ HUYỀN THOẠI CỦA<br />RITZ-CARLTON</h1>
+
+        <p class="max-w-2xl text-xs text-gray-800 leading-relaxed">
+            Tiêu chuẩn vàng – Biểu tượng xuất sắc về dịch vụ, vượt tầm so sánh ở mọi khía cạnh với 100 năm lịch sử cùng
+            nhiều giải thưởng danh tiếng.
+            Nhắc đến Ritz-Carlton, bất kỳ ai trong giới tinh hoa đều biết về dịch vụ huyền thoại của thương hiệu này,
+            nhẹ nhàng và tinh tế, luôn đem lại sự tự hào kiểu hành cho chủ nhân.
+        </p>
+
+        <div>
+            <div class="py-8 px-6">
+                <div class="max-w-6xl mx-auto text-center">
+                    <h2 class="text-sm font-medium tracking-wide mb-4 uppercase">Dịch vụ thiết yếu</h2>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-left text-2xs text-gray-800">
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Đặt vé máy bay, phi cơ tư nhân</li>
+                            <li>Thông tin mua sắm</li>
+                            <li>Đưa đón sân bay</li>
+                            <li>Đặt dịch vụ cắm hoa</li>
+                            <li>Thu xếp các hoạt động sự kiện</li>
+                            <li>Điều phối dịch vụ giao hàng</li>
+                            <li>Đặt thuê xe ô tô</li>
+                            <li>Đặt xe Limousine/xe ô tô</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ hành chính văn phòng</li>
+                            <li>Dịch vụ thu gom rác</li>
+                            <li>Đặt phòng khách sạn+</li>
+                            <li>Đặt sân golf</li>
+                            <li>Thông tin/Đặt bàn nhà hàng</li>
+                            <li>Thông tin/Đặt chuyến du lịch</li>
+                            <li>Đặt lịch hẹn spa & salon</li>
+                            <li>Thông tin về các dịch vụ (tôn giáo)</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ chuyển nhà</li>
+                            <li>Dịch vụ công chứng</li>
+                            <li>Dịch vụ đón, trả xe tại sảnh</li>
+                            <li>Thông tin và đặt dịch vụ chăm sóc/trông giữ thú cưng</li>
+                            <li>Bảo vệ tài sản</li>
+                            <li>Thông tin về nhà hát và các dịch vụ giải trí</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ quản gia/mở cửa ra vào sảnh/vận chuyển hành lý</li>
+                            <li>Vệ sinh khu vực công cộng</li>
+                            <li>Bảo trì khu vực công cộng</li>
+                            <li>Giao báo/tạp chí/hàng hoá</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+            <div class="py-8 px-6">
+                <div class="max-w-6xl mx-auto text-center">
+                    <h2 class="text-sm font-medium tracking-wide mb-4 uppercase">Dịch vụ thiết yếu</h2>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-left text-2xs text-gray-800">
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Đặt vé máy bay, phi cơ tư nhân</li>
+                            <li>Thông tin mua sắm</li>
+                            <li>Đưa đón sân bay</li>
+                            <li>Đặt dịch vụ cắm hoa</li>
+                            <li>Thu xếp các hoạt động sự kiện</li>
+                            <li>Điều phối dịch vụ giao hàng</li>
+                            <li>Đặt thuê xe ô tô</li>
+                            <li>Đặt xe Limousine/xe ô tô</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ hành chính văn phòng</li>
+                            <li>Dịch vụ thu gom rác</li>
+                            <li>Đặt phòng khách sạn+</li>
+                            <li>Đặt sân golf</li>
+                            <li>Thông tin/Đặt bàn nhà hàng</li>
+                            <li>Thông tin/Đặt chuyến du lịch</li>
+                            <li>Đặt lịch hẹn spa & salon</li>
+                            <li>Thông tin về các dịch vụ (tôn giáo)</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ chuyển nhà</li>
+                            <li>Dịch vụ công chứng</li>
+                            <li>Dịch vụ đón, trả xe tại sảnh</li>
+                            <li>Thông tin và đặt dịch vụ chăm sóc/trông giữ thú cưng</li>
+                            <li>Bảo vệ tài sản</li>
+                            <li>Thông tin về nhà hát và các dịch vụ giải trí</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ quản gia/mở cửa ra vào sảnh/vận chuyển hành lý</li>
+                            <li>Vệ sinh khu vực công cộng</li>
+                            <li>Bảo trì khu vực công cộng</li>
+                            <li>Giao báo/tạp chí/hàng hoá</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="py-8 px-6">
+                <div class="max-w-6xl mx-auto text-center">
+                    <h2 class="text-sm font-medium tracking-wide mb-4 uppercase">Dịch vụ thiết yếu</h2>
+
+                    <div
+                        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-left text-2xs text-gray-800">
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Đặt vé máy bay, phi cơ tư nhân</li>
+                            <li>Thông tin mua sắm</li>
+                            <li>Đưa đón sân bay</li>
+                            <li>Đặt dịch vụ cắm hoa</li>
+                            <li>Thu xếp các hoạt động sự kiện</li>
+                            <li>Điều phối dịch vụ giao hàng</li>
+                            <li>Đặt thuê xe ô tô</li>
+                            <li>Đặt xe Limousine/xe ô tô</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ hành chính văn phòng</li>
+                            <li>Dịch vụ thu gom rác</li>
+                            <li>Đặt phòng khách sạn+</li>
+                            <li>Đặt sân golf</li>
+                            <li>Thông tin/Đặt bàn nhà hàng</li>
+                            <li>Thông tin/Đặt chuyến du lịch</li>
+                            <li>Đặt lịch hẹn spa & salon</li>
+                            <li>Thông tin về các dịch vụ (tôn giáo)</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ chuyển nhà</li>
+                            <li>Dịch vụ công chứng</li>
+                            <li>Dịch vụ đón, trả xe tại sảnh</li>
+                            <li>Thông tin và đặt dịch vụ chăm sóc/trông giữ thú cưng</li>
+                            <li>Bảo vệ tài sản</li>
+                            <li>Thông tin về nhà hát và các dịch vụ giải trí</li>
+                        </ul>
+                        <ul class="space-y-2 list-disc list-inside">
+                            <li>Dịch vụ quản gia/mở cửa ra vào sảnh/vận chuyển hành lý</li>
+                            <li>Vệ sinh khu vực công cộng</li>
+                            <li>Bảo trì khu vực công cộng</li>
+                            <li>Giao báo/tạp chí/hàng hoá</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="bg-gray-500">
+        <div class="py-20">
+            <div class="mx-auto w-36">
+                <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
+                    loading="lazy" />
+            </div>
+            <div class=" py-10 px-6">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs mb-12">
+                    <div class="space-y-4 md:col-span-2">
+                        <div>
+                            <p class="">Địa Chỉ Dự Án:</p>
+                            <p>22-24 Hàng Bài, Phường Hàng Bài, Quận Hoàn Kiếm, Hà Nội, Việt Nam</p>
+                        </div>
+                        <div>
+                            <p class="">Địa Chỉ Nhà Mẫu:</p>
+                            <p>
+                                T-Place, 30A Lý Thường Kiệt, Phường Hàng Bài, Quận Hoàn Kiếm, Thành Phố Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-medium">Email:</p>
+                            <p>xxx@xxx.com</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Hotline:</p>
+                            <p>0XXX XXX XXX</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <p class="uppercase text-sm font-medium">Kết Nối Với Chúng Tôi</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="#"
+                                class="w-9 h-9 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 12.07C22 6.486 17.514 2 12 2S2 6.486 2 12.07c0 4.991 3.657 9.128 8.438 9.88v-6.993H7.898v-2.887h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.242 0-1.63.771-1.63 1.562v1.874h2.773l-.443 2.887h-2.33v6.993C18.343 21.199 22 17.061 22 12.07z" />
+                                </svg>
+                            </a>
+
+                            <a href="#"
+                                class="w-9 h-9 rounded-md bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M19.615 3.184C21.11 3.642 22 4.798 22 6.352v11.296c0 1.554-.89 2.71-2.385 3.168C17.643 21.377 12 21.5 12 21.5s-5.643-.123-7.615-.684C2.89 20.358 2 19.202 2 17.648V6.352c0-1.554.89-2.71 2.385-3.168C6.357 2.623 12 2.5 12 2.5s5.643.123 7.615.684zM10 15.5l6-3.5-6-3.5v7z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs">
+                    <div class="col-span-3">
+                        <h3 class="text-sm uppercase font-medium mb-4">A MEMBER OF THE MASTERISE GROUP</h3>
+                        <div class="max-w-md w-full text-2xs">
+                            Các thông tin về dự án The Grand, Hanoi tại trang này là sản phẩm và thuộc quyền sở hữu của
+                            Công
+                            ty Cổ Phần Thời Đại Mới T&T, GCNĐKDN số 0102479462, chủ đầu tư Dự án và được công khai tại
+                            đây
+                            theo thỏa thuận giữa Công ty Cổ phần Tập đoàn Masterise và Công ty Cổ Phần Thời Đại Mới T&T.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-36">
+                            <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
+                                loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="w-autp h-auto fixed bottom-0 right-0 z-[9999] bg-[#b29678] flex flex-col items-center justify-between">
+        <div class="space-y-6">
+            <div class="p-3 hover:scale-125 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                <svg class="w-5 h-5  group-hover:text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 3h16v4H4zM4 9h16v12H4z" />
+                </svg>
+            </div>
+
+            <div class="p-3 hover:scale-125 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                <svg class="w-5 h-5 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                </svg>
+            </div>
+
+            <div class="p-3 hover:scale-125 hover:text-white transition duration-200 ease-in-out cursor-pointer">
+                <svg class="w-5 h-5 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9" />
+                    <path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z" />
+                </svg>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/javascripts/carousel.js"></script>
+    <script src="./public/javascripts/carousel-second.js"></script>
+    <script src="./public/javascripts/modal.js"></script>
+    <script src="./public/javascripts/shink.js"></script>
+    <script src="./public/javascripts/menu.js"></script>
+    <script src="./public/javascripts/image.js"></script>
+</body>
+
+</html>

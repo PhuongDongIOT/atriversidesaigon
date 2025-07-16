@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="./public/style.css" rel="stylesheet">
+</head>
+
+<body class="font-merriweather ">
+    <section>
+        <div class="relative w-full">
+            <div class="swiper mySwiper overflow-hidden shadow-lg">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide min-h-screen">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 3" class="w-full h-full object-cover"
+                            loading="lazy" />
+                    </div>
+                </div>
+
+                <!-- Nút next -->
+                <div class="swiper-pagination !bottom-[150px] hidden"></div>
+            </div>
+            <div class="absolute z-[999] top-[60%] transform -translate-y-[50%] w-full text-center text-white">
+                <div class="mx-auto max-w-xl text-center flex flex-col gap-8">
+                    <h2 class="text-4xl font-light tracking-[0.2rem]">VỊ TRÍ TRUNG TÂM ĐỘC TÔN</h2>
+                    <p class="text-sm font-light tracking-[0.1rem]">Cách Hồ Hoàn Kiếm vài bước chân, bao quanh bởi những
+                        địa danh nổi tiếng, với mọi
+                        tiện ích hiện đại bậc nhất, Khu căn hộ hàng hiệu Ritz-Carlton tại The Grand mang đến cho chủ
+                        nhân một cuộc sống đẳng cấp xứng tầm quốc tế. </p>
+                    <div class="text-center">
+                        <a href="" class="mx-auto text-sm px-4 py-2 text-white">XEM BẢN ĐỒ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="header" class="fixed top-0 left-0 w-full z-[999] shadow-md">
+        <div id="headerContainer"
+            class="mx-auto max-w-6xl flex justify-between items-center px-4 py-6 space-x-4 transition-all">
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo trái"
+                    class="logo-img w-24 h-24 object-contain transition-all duration-300" />
+            </div>
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo giữa"
+                    class="logo-img w-32 h-32 object-contain transition-all duration-300" />
+            </div>
+            <div class="logo-wrap shrink-0">
+                <img src="./public/images/logo.png" alt="Logo phải"
+                    class="logo-img w-24 h-24 object-contain transition-all duration-300" />
+            </div>
+        </div>
+
+
+        <nav class="bg-[#2d2e3d] text-white text-xs">
+            <ul class="flex justify-center space-x-8 py-4 relative z-20">
+                <li><a href="index.html" class="tracking-wider hover:text-gray-300">TRANG CHỦ</a></li>
+                <li class="relative group">
+                    <a href="project.html" class="tracking-wider hover:text-gray-300">DỰ ÁN</a>
+                    <!-- Submenu -->
+                    <div id="submenu"
+                        class="w-4xl absolute left-1/2 -translate-x-1/2 top-full mt-2 px-4 py-3 bg-[#f5ede7] text-[#6d5f50] shadow-md flex space-x-6 opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto transition-all duration-300">
+                        <a href="#" class="hover:underline tracking-wide">GIỚI THIỆU DỰ ÁN</a>
+                        <a href="#" class="hover:underline tracking-wide">DỊCH VỤ LEGENDARY RITZ-CARLTON</a>
+                        <a href="#" class="hover:underline tracking-wide">THIẾT KẾ</a>
+                        <a href="#" class="hover:underline tracking-wide">TIỆN ÍCH</a>
+                        <a href="#" class="hover:underline tracking-wide">MẶT BẰNG TẦNG</a>
+                    </div>
+                </li>
+                <li><a href="location.html" class="tracking-wider hover:text-gray-300">VỊ TRÍ</a></li>
+                <li><a href="gallery.html" class="tracking-wider hover:text-gray-300">THƯ VIỆN</a></li>
+                <li><a href="developer.html" class="tracking-wider hover:text-gray-300">NHÀ PHÁT TRIỂN</a></li>
+                <li><a href="luxury-real-estate.html" class="tracking-wider hover:text-gray-300">BĐS HÀNG HIỆU</a></li>
+                <li><a href="contact.html" class="tracking-wider hover:text-gray-300">LIÊN HỆ</a></li>
+            </ul>
+        </nav>
+
+    </section>
+
+    <section class="bg-gray-300">
+        <div class="mx-auto max-w-6xl w-full">
+            <div class="py-12">
+                <div class="border-t-2 border-white pt-4 text-center mb-4">
+                    <div class="grid grid-cols-3 text-white">
+                        <div>
+                            CÁC ĐỊA DANH
+                        </div>
+                        <div class="border-l-2 border-r-2 border-white">
+                            TRUNG TÂM MUA SẮM
+                        </div>
+                        <div>
+                            BỆNH VIỆN
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full">
+                    <img src="./public/images/nazzari.jpg" alt="Ảnh dự án 2"
+                        class="w-full h-full object-cover shadow-2xl" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <footer class="bg-gray-400">
+        <div class="py-20">
+            <div class="mx-auto w-36">
+                <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
+                    loading="lazy" />
+            </div>
+            <div class="text-white py-10 px-6">
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs mb-12">
+                    <div class="space-y-4 md:col-span-2">
+                        <div>
+                            <p class="">Địa Chỉ Dự Án:</p>
+                            <p>22-24 Hàng Bài, Phường Hàng Bài, Quận Hoàn Kiếm, Hà Nội, Việt Nam</p>
+                        </div>
+                        <div>
+                            <p class="">Địa Chỉ Nhà Mẫu:</p>
+                            <p>
+                                T-Place, 30A Lý Thường Kiệt, Phường Hàng Bài, Quận Hoàn Kiếm, Thành Phố Hà Nội, Việt Nam
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-medium">Email:</p>
+                            <p>xxx@xxx.com</p>
+                        </div>
+                        <div>
+                            <p class="font-medium">Hotline:</p>
+                            <p>0XXX XXX XXX</p>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3">
+                        <p class="uppercase text-sm font-medium">Kết Nối Với Chúng Tôi</p>
+                        <div class="flex items-center space-x-4">
+                            <a href="#"
+                                class="w-9 h-9 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M22 12.07C22 6.486 17.514 2 12 2S2 6.486 2 12.07c0 4.991 3.657 9.128 8.438 9.88v-6.993H7.898v-2.887h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.462h-1.26c-1.242 0-1.63.771-1.63 1.562v1.874h2.773l-.443 2.887h-2.33v6.993C18.343 21.199 22 17.061 22 12.07z" />
+                                </svg>
+                            </a>
+
+                            <a href="#"
+                                class="w-9 h-9 rounded-md bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-white transition">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24"
+                                    fill="currentColor">
+                                    <path
+                                        d="M19.615 3.184C21.11 3.642 22 4.798 22 6.352v11.296c0 1.554-.89 2.71-2.385 3.168C17.643 21.377 12 21.5 12 21.5s-5.643-.123-7.615-.684C2.89 20.358 2 19.202 2 17.648V6.352c0-1.554.89-2.71 2.385-3.168C6.357 2.623 12 2.5 12 2.5s5.643.123 7.615.684zM10 15.5l6-3.5-6-3.5v7z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs">
+                    <div class="col-span-3">
+                        <h3 class="text-sm uppercase font-medium mb-4">A MEMBER OF THE MASTERISE GROUP</h3>
+                        <div class="max-w-md w-full text-2xs">
+                            Các thông tin về dự án The Grand, Hanoi tại trang này là sản phẩm và thuộc quyền sở hữu của
+                            Công
+                            ty Cổ Phần Thời Đại Mới T&T, GCNĐKDN số 0102479462, chủ đầu tư Dự án và được công khai tại
+                            đây
+                            theo thỏa thuận giữa Công ty Cổ phần Tập đoàn Masterise và Công ty Cổ Phần Thời Đại Mới T&T.
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-36">
+                            <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
+                                loading="lazy" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="./public/javascripts/carousel.js"></script>
+    <script src="./public/javascripts/carousel-second.js"></script>
+    <script src="./public/javascripts/modal.js"></script>
+    <script src="./public/javascripts/shink.js"></script>
+    <script src="./public/javascripts/menu.js"></script>
+    <script src="./public/javascripts/image.js"></script>
+</body>
+
+</html>
