@@ -1,33 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const text = document.querySelector("#logo text");
-  const length = text.getComputedTextLength();
-
-  text.setAttribute("stroke-dasharray", length);
-  text.setAttribute("stroke-dashoffset", length);
-
-  const tli = gsap.timeline();
-
-  tli.to(text, {
-    strokeDashoffset: 0,
-    duration: 2,
-    ease: "power2.out",
-  })
-
-  .to(".preloader", {
-    opacity: 0,
-    duration: 1,
-    onComplete: () => {
-      document.querySelector(".preloader").style.display = "none";
-    }
-  })
-
-  .fromTo("#content", 
-    { opacity: 0, y: 20 },
-    { opacity: 1, y: 0, duration: 1, ease: "power2.out" } 
-  );
-});
-
-
 
 const submenu = document.getElementById('submenu');
 
@@ -111,4 +81,30 @@ window.addEventListener("DOMContentLoaded", () => {
     delay: 0.5,
     ease: "back.out(1.7)",
   });
+
+  const text = document.querySelector("#logo text");
+  const length = text.getComputedTextLength();
+
+  text.setAttribute("stroke-dasharray", length);
+  text.setAttribute("stroke-dashoffset", length);
+
+  const tli = gsap.timeline();
+
+  tli.to(text, {
+    strokeDashoffset: 0,
+    duration: 2,
+    ease: "power2.out",
+  })
+    .to(".preloader", {
+      opacity: 0,
+      duration: 1,
+      onComplete: () => {
+        document.querySelector(".preloader").style.display = "none";
+      }
+    })
+
+    .fromTo("#content",
+      { opacity: 0 },
+      { opacity: 1, duration: 1, ease: "power2.out" }
+    );
 });
