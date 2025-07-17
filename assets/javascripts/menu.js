@@ -1,3 +1,30 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const text = document.querySelector("#logo text");
+  const length = text.getComputedTextLength();
+
+  text.setAttribute("stroke-dasharray", length);
+  text.setAttribute("stroke-dashoffset", length);
+
+  const tli = gsap.timeline();
+
+  // Bước 1: Vẽ SVG
+  tli.to(text, {
+    strokeDashoffset: 0,
+    duration: 2,
+    ease: "power2.out",
+  })
+
+    .to(".preloader", {
+      opacity: 0,
+      duration: 1,
+      onComplete: () => {
+        document.querySelector(".preloader").style.display = "none";
+        document.querySelector("#content").style.opacity = "1";
+      }
+    });
+});
+
+
 const submenu = document.getElementById('submenu');
 
 function showSubmenu() {
