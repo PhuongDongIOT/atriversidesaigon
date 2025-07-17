@@ -544,6 +544,9 @@
   .list-disc {
     list-style-type: disc;
   }
+  .columns-2 {
+    columns: 2;
+  }
   .columns-3 {
     columns: 3;
   }
@@ -1269,6 +1272,11 @@
       max-width: var(--container-md);
     }
   }
+  .md\:columns-3 {
+    @media (width >= 48rem) {
+      columns: 3;
+    }
+  }
   .md\:grid-cols-2 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1287,6 +1295,16 @@
   .md\:grid-cols-5 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+  }
+  .md\:gap-4 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .md\:gap-6 {
+    @media (width >= 48rem) {
+      gap: calc(var(--spacing) * 6);
     }
   }
   .md\:gap-8 {
