@@ -29,33 +29,55 @@ let menuOpen = false;
 
 mobileBtn.addEventListener("click", () => {
   if (!menuOpen) {
-    gsap.to(mobileMenu, { y: 0, opacity: 1, duration: 0.4, ease: "power2.out" });
+    gsap.to(mobileMenu, { y: 0, opacity: 1, display: "block", height: "85vh", duration: 0.4, ease: "power2.out" });
   } else {
-    gsap.to(mobileMenu, { y: "100%", opacity: 0, duration: 0.4, ease: "power2.in" });
+    gsap.to(mobileMenu, { y: "100%", opacity: 0, display: "none", height: 0, duration: 0.4, ease: "power2.in" });
   }
   menuOpen = !menuOpen;
 });
 
 
- const toggleBtn = document.getElementById("toggle-project");
-  const submenuMobile = document.getElementById("project-submenu");
-  let isOpen = false;
+const toggleBtn = document.getElementById("toggle-project");
+const submenuMobile = document.getElementById("project-submenu");
+let isOpen = false;
 
-  toggleBtn.addEventListener("click", () => {
-    if (!isOpen) {
-      gsap.to(submenuMobile, {
-        height: "auto",
-        opacity: 1,
-        duration: 0.4,
-        ease: "power2.out"
-      });
-    } else {
-      gsap.to(submenuMobile, {
-        height: 0,
-        opacity: 0,
-        duration: 0.4,
-        ease: "power2.in"
-      });
-    }
-    isOpen = !isOpen;
+toggleBtn.addEventListener("click", () => {
+  if (!isOpen) {
+    gsap.to(submenuMobile, {
+      height: "auto",
+      opacity: 1,
+      duration: 0.4,
+      ease: "power2.out"
+    });
+  } else {
+    gsap.to(submenuMobile, {
+      height: 0,
+      opacity: 0,
+      duration: 0.4,
+      ease: "power2.in"
+    });
+  }
+  isOpen = !isOpen;
+});
+
+
+window.addEventListener("DOMContentLoaded", () => {
+  const menu = document.getElementById("floatingMenu");
+  const icons = menu.querySelectorAll(".icon");
+
+  gsap.from(menu, {
+    y: 100,
+    opacity: 0,
+    duration: 0.8,
+    ease: "power3.out",
   });
+
+  gsap.from(icons, {
+    opacity: 1,
+    y: 0,
+    duration: 0.6,
+    stagger: 0.2,
+    delay: 0.5,
+    ease: "back.out(1.7)",
+  });
+});

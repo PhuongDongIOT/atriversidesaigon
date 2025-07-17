@@ -24,23 +24,22 @@
             <div class="swiper mySwiper overflow-hidden shadow-lg">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide min-h-screen">
-                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
-                            loading="lazy" />
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2"
+                            class="w-auto md:w-full h-full min-h-screen object-cover" loading="lazy" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2" class="w-full h-full object-cover"
-                            loading="lazy" />
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 2"
+                            class="w-auto md:w-full h-full min-h-screen object-cover" loading="lazy" />
                     </div>
                     <div class="swiper-slide">
-                        <img src="./public/images/dillon.png" alt="Ảnh dự án 3" class="w-full h-full object-cover"
-                            loading="lazy" />
+                        <img src="./public/images/dillon.png" alt="Ảnh dự án 3"
+                            class="w-auto md:w-full h-full min-h-screen object-cover" loading="lazy" />
                     </div>
                 </div>
-
                 <!-- Nút next -->
                 <div class="swiper-pagination !bottom-[150px] hidden"></div>
             </div>
-            <div class="absolute z-[999] top-[60%] transform -translate-y-[50%] w-full text-center ">
+            <div class="absolute z-[999] top-[60%] transform -translate-y-[50%] w-full text-center px-4 md:px-0">
                 <div class="mx-auto max-w-4xl text-center flex flex-col gap-4">
                     <h2 class="text-4xl font-medium tracking-[0.2rem]">LIÊN HỆ</h2>
                     <p class="mx-auto max-w-2xl w-full text-xs tracking-tight">Độc quyền trải nghiệm những dịch vụ cùng
@@ -61,7 +60,7 @@
             </div>
             <div class="logo-wrap shrink-0">
                 <img src="./public/images/logo.png" alt="Logo giữa"
-                    class="logo-img w-32 h-32 object-contain transition-all duration-300" />
+                    class="hidden md:block logo-img w-32 h-32 object-contain transition-all duration-300" />
             </div>
             <div class="logo-wrap shrink-0">
                 <img src="./public/images/logo.png" alt="Logo phải"
@@ -70,8 +69,8 @@
         </div>
 
 
-        <nav class="bg-[#2d2e3d]  text-xs">
-            <ul class="flex justify-center space-x-8 py-4 relative z-20">
+        <nav class="bg-[#2d2e3d] text-xs">
+            <ul class="hidden md:flex justify-center space-x-8 py-4 relative z-20">
                 <li><a href="index.html" class="tracking-wider hover:text-gray-300">TRANG CHỦ</a></li>
                 <li class="relative group">
                     <a href="project.html" class="tracking-wider hover:text-gray-300">DỰ ÁN</a>
@@ -91,13 +90,50 @@
                 <li><a href="luxury-real-estate.html" class="tracking-wider hover:text-gray-300">BĐS HÀNG HIỆU</a></li>
                 <li><a href="contact.html" class="tracking-wider hover:text-gray-300">LIÊN HỆ</a></li>
             </ul>
+
+            <div class="md:hidden w-full flex justify-center">
+                <button id="mobile-menu-button" class="md:hidden text-white px-4 py-2 mx-auto">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+
+
+            <div id="mobile-menu"
+                class="relative top-0 h-full left-0 w-full bg-[#2d2e3d] text-white space-y-4 md:hidden text-2xl text-left z-[9999] hidden"
+                style="transform: translateY(100%); opacity: 0; height: 0;">
+                <div class="mx-auto max-w-sm w-full px-4 py-6 flex flex-col gap-4">
+                    <a href="index.html"
+                        class="border-l-4 pl-2  border-white block tracking-wider hover:text-gray-300">TRANG CHỦ</a>
+                    <div>
+                        <div class="tracking-wider border-l-4 pl-2 " id="toggle-project">DỰ ÁN</div>
+                        <div id="project-submenu" class="pl-3 text-sm md:mt-2 space-y-1 text-gray-200 overflow-hidden"
+                            style="height: 0; opacity: 0;">
+                            <a href="#" class="border-white block hover:underline">GIỚI THIỆU DỰ ÁN</a>
+                            <a href="#" class="border-white block hover:underline">DỊCH VỤ LEGENDARY RITZ-CARLTON</a>
+                            <a href="#" class="border-white block hover:underline">THIẾT KẾ</a>
+                            <a href="#" class="border-white block hover:underline">TIỆN ÍCH</a>
+                            <a href="#" class="border-white block hover:underline">MẶT BẰNG TẦNG</a>
+                        </div>
+                    </div>
+                    <a href="location.html" class="border-l-4 pl-2 block tracking-wider hover:text-gray-300">VỊ TRÍ</a>
+                    <a href="gallery.html" class="border-l-4 pl-2 block tracking-wider hover:text-gray-300">THƯ VIỆN</a>
+                    <a href="developer.html" class="border-l-4 pl-2 block tracking-wider hover:text-gray-300">NHÀ PHÁT
+                        TRIỂN</a>
+                    <a href="luxury-real-estate.html"
+                        class="border-l-4 pl-2 block tracking-wider hover:text-gray-300">BĐS HÀNG HIỆU</a>
+                    <a href="contact.html" class="border-l-4 pl-2 block tracking-wider hover:text-gray-300">LIÊN HỆ</a>
+                </div>
+            </div>
         </nav>
     </section>
 
 
     <section>
-        <div class="py-24">
-            <div class="mx-auto max-w-6xl grid grid-cols-2 ">
+        <div class="py-12 md:py-24">
+            <div class="mx-auto max-w-6xl md:grid md:grid-cols-2 px-4 md:px-0">
 
                 <div class="max-w-3xl mx-auto text-center">
                     <!-- Title -->
@@ -155,9 +191,9 @@
                     </div>
                 </div>
 
-                <div class="max-w-3xl mx-auto text-center">
+                <div class="max-w-3xl mx-auto text-center pt-18 md:pt-0">
                     <h2 class="text-2xl md:text-2xl font-semibold tracking-[0.3em] uppercase  mb-4">ĐỊA CHỈ
-                        NHẦ MẪU</h2>
+                        NHÀ MẪU</h2>
 
                     <!-- Subtitle -->
                     <p class="mb-6 text-xs tracking-[0.1em]">
@@ -174,14 +210,13 @@
 
     </section>
 
-
     <footer class="bg-gray-500">
-        <div class="py-20">
+        <div class="py-12 md:py-20">
             <div class="mx-auto w-36">
                 <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
                     loading="lazy" />
             </div>
-            <div class=" py-10 px-6">
+            <div class="text-white py-10 px-6">
                 <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs mb-12">
                     <div class="space-y-4 md:col-span-2">
                         <div>
@@ -210,7 +245,7 @@
                         <p class="uppercase text-sm font-medium">Kết Nối Với Chúng Tôi</p>
                         <div class="flex items-center space-x-4">
                             <a href="#"
-                                class="w-9 h-9 rounded-full bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-white transition">
+                                class="w-9 h-9 rounded-md bg-gray-100 text-gray-700 flex items-center justify-center hover:bg-white transition">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="currentColor"
                                     viewBox="0 0 24 24">
                                     <path
@@ -231,8 +266,8 @@
 
                 </div>
 
-                <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-xs">
-                    <div class="col-span-3">
+                <div class="max-w-6xl mx-auto md:grid md:grid-cols-4 gap-8 text-xs">
+                    <div class="md:col-span-3">
                         <h3 class="text-sm uppercase font-medium mb-4">A MEMBER OF THE MASTERISE GROUP</h3>
                         <div class="max-w-md w-full text-2xs">
                             Các thông tin về dự án The Grand, Hanoi tại trang này là sản phẩm và thuộc quyền sở hữu của
@@ -242,8 +277,8 @@
                             theo thỏa thuận giữa Công ty Cổ phần Tập đoàn Masterise và Công ty Cổ Phần Thời Đại Mới T&T.
                         </div>
                     </div>
-                    <div>
-                        <div class="w-36">
+                    <div class="w-full">
+                        <div class="mx-auto md:mx-0 w-36">
                             <img src="./public/images/book.png" alt="Ảnh dự án 3" class="w-full h-auto object-cover"
                                 loading="lazy" />
                         </div>
@@ -254,32 +289,39 @@
         </div>
     </footer>
 
-    <div class="w-autp h-auto fixed bottom-0 right-0 z-[9999] bg-[#b29678] flex flex-col items-center justify-between">
-        <div class="space-y-2">
-            <div class="p-3 hover:scale-125 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                <svg class="w-5 h-5  group-hover:text-white" viewBox="0 0 24 24" fill="none"
-                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+    <div id="floatingMenu"
+        class="w-auto h-auto fixed bottom-0 right-0 z-[9999] bg-[#b29678] flex flex-col items-center justify-between p-1 md:p-2 rounded-xl shadow-lg">
+        <div class="space-y-4">
+            <div
+                class="icon p-3 hover:scale-125 hover:text-yellow-300 transition duration-200 ease-in-out cursor-pointer m-0">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path d="M4 3h16v4H4zM4 9h16v12H4z" />
                 </svg>
             </div>
 
-            <div class="p-3 hover:scale-125 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                <svg class="w-5 h-5 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            <div
+                class="icon p-3 hover:scale-125 hover:text-yellow-300 transition duration-200 ease-in-out cursor-pointer m-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
                 </svg>
             </div>
 
-            <div class="p-3 hover:scale-125 hover:text-white transition duration-200 ease-in-out cursor-pointer">
-                <svg class="w-5 h-5 " fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            <div
+                class="icon p-3 hover:scale-125 hover:text-yellow-300 transition duration-200 ease-in-out cursor-pointer m-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
                     stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 20h9" />
                     <path d="M16.5 3.5a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4Z" />
                 </svg>
             </div>
-
         </div>
     </div>
+
+
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
