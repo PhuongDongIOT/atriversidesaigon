@@ -7,22 +7,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const tli = gsap.timeline();
 
-  // Bước 1: Vẽ SVG
   tli.to(text, {
     strokeDashoffset: 0,
     duration: 2,
     ease: "power2.out",
   })
 
-    .to(".preloader", {
-      opacity: 0,
-      duration: 1,
-      onComplete: () => {
-        document.querySelector(".preloader").style.display = "none";
-        document.querySelector("#content").style.opacity = "1";
-      }
-    });
+  .to(".preloader", {
+    opacity: 0,
+    duration: 1,
+    onComplete: () => {
+      document.querySelector(".preloader").style.display = "none";
+    }
+  })
+
+  .fromTo("#content", 
+    { opacity: 0, y: 20 },
+    { opacity: 1, y: 0, duration: 1, ease: "power2.out" } 
+  );
 });
+
 
 
 const submenu = document.getElementById('submenu');
